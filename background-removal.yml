@@ -6,5 +6,5 @@ functions:
   background-removal:
     lang: node18
     handler: ./background-removal
-    image: background-removal:latest
+    image: vincentnys/background-removal:latest
 

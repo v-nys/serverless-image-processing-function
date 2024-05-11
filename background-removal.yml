@@ -7,4 +7,5 @@ functions:
     lang: node18
     handler: ./background-removal
     image: vincentnys/background-removal:latest
-
+    secrets:
+      - "auth-token"

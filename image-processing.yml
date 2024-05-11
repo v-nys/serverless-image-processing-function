@@ -3,10 +3,10 @@ provider:
   name: openfaas
   gateway: http://127.0.0.1:8080
 functions:
-  background-removal:
+  image-processing:
     lang: node18
-    handler: ./background-removal
-    image: vincentnys/background-removal:latest
+    handler: ./image-processing
+    image: vincentnys/image-processing:latest
     environment:
       NODE_ENV: production
     secrets:

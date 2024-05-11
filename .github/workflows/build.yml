@@ -31,4 +31,4 @@ jobs:
         run: >
           OWNER="${{ env.REPO_OWNER }}"
           TAG="${{ env.TAG }}"
-          faas-cli build
+          faas-cli build -f image-processing.yml

@@ -4,6 +4,10 @@ const { readFile } = require('fs').promises;
 
 module.exports = async (event, context) => {
     const auth_header = event.headers.authorization;
+
+    console.log("event body:");
+    console.debug(event.body);
+
     if (auth_header && auth_header.startsWith("Bearer ")) {
         const expected_token = await readFile("/var/openfaas/secrets/auth-token");
         const token = auth_header.substring(7);
